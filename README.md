@@ -1,16 +1,38 @@
 # e018_flutter_animatedlist_sizetransition_icon
 
-A new Flutter project.
+## Based On e015
 
-## Getting Started
+- [elrashid-flutter-examples/e015_flutter_animatedlist_sizetransition_e004base](https://github.com/elrashid-flutter-examples/e015_flutter_animatedlist_sizetransition_e004base)
 
-This project is a starting point for a Flutter application.
+  - Based On e014
 
-A few resources to get you started if this is your first Flutter project:
+    - [elrashid-flutter-examples/e014_flutter_animatedlist_noanimation_e004base](https://github.com/elrashid-flutter-examples/e014_flutter_animatedlist_noanimation_e004base)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+      - Based On e004 :
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+        - [elrashid-flutter-examples/e004_flutter_listview_crud_app_using_nonsecure_rest_api](https://github.com/elrashid-flutter-examples/e004_flutter_listview_crud_app_using_nonsecure_rest_api)
+
+## Screen Record
+
+![app screen record](docs/screen_record.gif)
+
+## What
+
+- Icons.remove + SizeTransition + AnimatedList for tasks in flutter Task app (e004)
+
+- must run with :
+
+  - [elrashid-flutter-examples/e002-aspcore-rest-api-server-for-flutter](https://github.com/elrashid-flutter-examples/e002-aspcore-rest-api-server-for-flutter)
+
+## Full code
+
+      _myListKey.currentState.removeItem(
+          ti,
+          (BuildContext context, Animation<double> animation) =>
+              Icon(Icons.remove),
+          duration: Duration(seconds: 5));
+    }
+
+## Ref
+
+[e015](https://github.com/elrashid-flutter-examples/e014_flutter_animatedlist_noanimation_e004base)
